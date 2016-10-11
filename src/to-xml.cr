@@ -26,7 +26,7 @@ class Hash
     end
   end
 
-  private def to_xml_node(io : String::Builder, key : String, value : String | Bool | Int | Float | Hash | Array)
+  private def to_xml_node(io : String::Builder, key : String, value : String | Nil | Bool | Int | Float | Hash | Array)
     attrs = value.select { |k,v| k[0]=='@'} if value.is_a? Hash
     value = value.select { |k,v| k[0]!='@'} if value.is_a? Hash
     io << "<"
@@ -47,6 +47,12 @@ end
 class Array
   def to_xml(io)
     io << "Can't do to_xml directly, needs a top level node"
+  end
+end
+
+struct Nil
+  def to_xml(io)
+    io << ""
   end
 end
 

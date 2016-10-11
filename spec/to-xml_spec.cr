@@ -37,4 +37,8 @@ describe "to_xml" do
   it "array" do
     {"node" => { "app" => [1,2] }}.to_xml.should eq("<node><app>1</app><app>2</app></node>")
   end
+
+  it "nil" do
+    { "fred" => nil }.to_xml.should eq("<fred></fred>")
+  end
 end
