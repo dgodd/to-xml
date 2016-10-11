@@ -1,0 +1,41 @@
+# to-xml
+
+TODO: Write a description here
+
+## Installation
+
+
+Add this to your application's `shard.yml`:
+
+```yaml
+dependencies:
+  to-xml:
+    github: dgodd/to-xml
+```
+
+
+## Usage
+
+
+```crystal
+require "to-xml"
+```
+
+
+TODO: Write usage instructions here
+
+## Development
+
+TODO: Write development instructions here
+
+## Contributing
+
+1. Fork it ( https://github.com/dgodd/to-xml/fork )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
+
+## Contributors
+
+- [[dgodd]](https://github.com/dgodd) Dave Goddard - creator, maintainer
